@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: yellowgreen;
+  position: relative;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.nba-logo {
+position: absolute;
+  margin: 10px 15px;
+  width: 200px;
+}
+
+.title {
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+  font-size: 3rem;
+
+}
+.input{
+  display: block;
+  margin: 10vh auto;
+  border: none;
+  width: 75vh;
+  height: 50px;
+  border-radius: 10px;
+ 
+}
+.input::placeholder{
+  text-align: center;
+  font-size: 1rem;
+}
+
+.input:focus{
+  outline: none;
+  font-size:1.5rem ;
+}
