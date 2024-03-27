@@ -1,14 +1,29 @@
-import React from 'react'
+import { useState } from "react";
 
-const PlayerCard = ({data}) => {
-    console.log(data)
+
+const PlayerCard = ({ data }) => {
+
+
+  const [property, setProperty] = useState(data.statistics);
+  const [toggle, setToggle] = useState(true);
+
+  const handleEvent = () => {
+    setToggle(!toggle)
+    return setProperty(property => property.statistics )
+  }
+  
+  console.log(data);
   return (
-    <div className='card'> 
-<img src={data.img} alt=""  />
-<p>{data.name}</p>
-    
-    </div>
-  )
-}
+    <div className="card" onClick={handleEvent}>
 
-export default PlayerCard
+
+
+<p>{property}</p>
+
+      <img src={data.img} alt="" className="card-img" />
+      <p className="card-name">{data.name}</p>
+    </div>
+  );
+};
+
+export default PlayerCard;
